@@ -86,8 +86,10 @@ class Checker(httpx.Client):
                         'RealCounty': self.configs['address'][2],
                         'RealAddress': self.configs['address'][3],
                         'BackState': 1,
-                        'MorningTemp': f'36.{randint(*interval)}',
-                        'NightTemp': f'36.{randint(*interval)}',
+                        'Temperature': 36.5,
+                        'QRCodeColor': '绿色',
+#                         'MorningTemp': f'36.{randint(*interval)}',
+#                         'NightTemp': f'36.{randint(*interval)}',
                         'tripinfolist': []
                     }
                 ).json()['msg']
