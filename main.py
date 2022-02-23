@@ -88,8 +88,8 @@ class Checker(httpx.Client):
                         'BackState': 1,
                         'Temperature': 36.5,
                         'QRCodeColor': '绿色',
-#                         'MorningTemp': f'36.{randint(*interval)}',
-#                         'NightTemp': f'36.{randint(*interval)}',
+                        'MorningTemp': f'36.{randint(*interval)}',
+                        'NightTemp': f'36.{randint(*interval)}',
                         'tripinfolist': []
                     }
                 ).json()['msg']
