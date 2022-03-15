@@ -79,8 +79,8 @@ class Checker(httpx.Client):
                         }
                     },
                     json={
-                        'Longitude': None,
-                        'Latitude': None,
+                        'Longitude': 112.94515181992338,
+                        'Latitude': 28.177091150362557,
                         'RealProvince': self.configs['address'][0],
                         'RealCity': self.configs['address'][1],
                         'RealCounty': self.configs['address'][2],
